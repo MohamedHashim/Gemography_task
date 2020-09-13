@@ -20,6 +20,11 @@ android {
         jvmTarget = "1.8"
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -56,6 +61,10 @@ dependencies {
 
     //gson converter
     api "com.squareup.retrofit2:converter-gson:2.6.0"
+
+    // navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
