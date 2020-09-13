@@ -19,7 +19,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    
+
     buildTypes {
         release {
             minifyEnabled false
@@ -53,6 +53,9 @@ dependencies {
     //retrofit
     api "com.squareup.retrofit2:retrofit:2.8.1"
     api "com.squareup.okhttp3:logging-interceptor:4.5.0"
+
+    //gson converter
+    api "com.squareup.retrofit2:converter-gson:2.6.0"
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
